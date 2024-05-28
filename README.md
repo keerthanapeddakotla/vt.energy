@@ -18,7 +18,7 @@
 ```
 
 # WARNING:
-## VT is NOT ready for general use. We will announce a formal release when it is ready.
+## VT is NOT fully available for self-hosting. We are moving our internal development to open source repository. We will announce a formal release when it is ready.
 
 ### We welcome contributors. Email to opensource@vt.energy
 
