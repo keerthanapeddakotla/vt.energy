@@ -1,10 +1,10 @@
-# Vidcentum AI Platform
+# VT.ENERGY
 
 ```
 /*==========================LICENSE NOTICE==========================*/
 /*
- * Vidcentum AI Platform
- * Platform code: VT.AI
+ * Description: AI/ML framework for Energy Intelligence Applications.
+ * Identifier: VT
  * Type of software: Application.
  * License: MIT License. Refer to LICENSE file of the software package.
  * Company: Vidcentum Technologies Pvt Ltd, India (CIN: U72200TG2009PTC063723).
@@ -15,4 +15,10 @@
  *          Hyderabad - 500081, Telangana, India.
 */
 /*========================END LICENSE NOTICE========================*/
+```
+
+# WARNING:
+## VT is NOT ready for general use. We will announce a formal release when it is ready.
+
+### We welcome contributors. Email to opensource@vt.energy
 
