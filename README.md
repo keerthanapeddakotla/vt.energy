@@ -18,7 +18,7 @@
 ```
 
 # WARNING:
-## VT is NOT fully available for self-hosting. We are moving our internal development to open source repository. We will announce a formal release when it is ready.
+## VT.ENERGY is NOT fully available for self-hosting. We are moving our internal development to open source repository. We will announce a formal release when it is ready.
 
 ### We welcome contributors. Email to opensource@vt.energy
 
