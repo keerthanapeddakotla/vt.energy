@@ -12,3 +12,4 @@ https://docs.github.com/en/get-started/getting-started-with-git/about-remote-rep
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
 ```
 
+### Use passphrase in SSH keys
