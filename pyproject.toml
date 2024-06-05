@@ -22,7 +22,7 @@ google-cloud-translate = "2.0.1"
 streamlit = "^1.33.0"
 twilio = "^9.0.5"
 pyreadline3 = "^3.4.1"
-pyjwt = "2.5.1"
+pyjwt = "2.5.0"
 
 
 [build-system]
