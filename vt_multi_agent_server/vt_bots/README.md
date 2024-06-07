@@ -25,32 +25,38 @@
 
 ### Development / Debug 
 ```
-sanic main:app --fast --no-access-logs --debug --auto-reload
+sanic server:app --fast --no-access-logs --debug --auto-reload
 ```
 
 ### Production
 ```
-sanic main:app --fast --no-access-logs
+sanic server:app --fast --no-access-logs
 ```
 
 ### Directory structure
 
 ```
-├── saninc-main.py
-├── poetry.lock
-├── pyproject.toml
+.
 ├── README.md
+├── server.py
+├── vt_advanced
+│   └── README.txt
+├── vt_api_handlers
+│   └── languages
+│       ├── google.py
 ├── vt_auth
 │   ├── auth.py
 │   ├── login.py
+├── vt_basics
+│   ├── custom_requests.py
 ├── vt_logging
 │   ├── config.py
 ├── vt_run
 │   ├── config
+│   │   ├── sanic_server_config.py
+│   │   └── server_config.py
 │   └── logs
-└── vt_sanic
-    ├── advanced
-    └── basics
+└── vt_testing    
 
 ```
 

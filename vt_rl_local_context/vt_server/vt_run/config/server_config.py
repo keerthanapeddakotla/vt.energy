@@ -9,12 +9,39 @@
 ##=======================END LICENSE NOTICE========================
 """
 
-# Used by the JWT
-VT_NAME = "VT API Server v0.1.0"
+#############################################################
+"""
+TODO #01
 
-REQUEST_TIMEOUT=60
+1. Update the VT_SANIC_SETUP->VT_MODULE_NAME to represent the subsystem
+e.g., vt_rl_user_query is a subsystem (microservice). So, the VT_SANIC_SETUP->VT_MODULE_NAME shall
+reflect the module name.
+VT_SANIC_SETUP->VT_MODULE_NAME = "vt-rl-user-query"
 
-#
-# Password generator: openssl rand -base64 42 or lenght of the password.
-#
-SECRET = "7qshKCvohK9uSekOhvhbWGuIZ2Iee0ZufzNshdiocMPOamrxUt4CebLL"
+"""
+
+"""
+TODO #02
+
+1. Update the VT_LOGGING_SETUP->VT_LOG_FILE to represent the subsystem
+e.g., vt_rl_user_query is a subsystem (microservice). So, the VT_LOGGING_SETUP->VT_LOG_FILE shall
+reflect the module name.
+VT_LOGGING_SETUP->VT_LOG_FILE  = "vt-rl-user-query.log"
+
+"""
+#############################################################
+
+
+
+# Used by Sanic
+VT_SANIC_SETUP = ({
+    'VT_MODULE_NAME': 'vt-local-context-server',
+    'VT_SANIC_SERVER_CONFIG_FILE': './vt_run/config/sanic_server_config.py'
+})
+
+# Used by application logger
+# Log file ../vt_run/logs/vt-local-context-server.log
+VT_LOGGING_SETUP = ({
+    'VT_LOG_DIRECTORY': '../vt_run/logs',
+    'VT_LOG_FILE': 'vt-local-context-server.log'
+})
