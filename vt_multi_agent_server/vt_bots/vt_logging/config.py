@@ -14,13 +14,15 @@ import logging
 from logging.config import dictConfig
 from sanic import Request
 from sanic.exceptions import SanicException
+from vt_run.config.server_config import VT_LOGGING_SETUP
 
 # Log file ../vt_run/logs/vt-api-server.log
 app_root_ = os.path.dirname(os.path.abspath(__file__))
-log_dir_ = os.path.join(app_root_, '../vt_run/logs')
+log_dir_ = os.path.join(app_root_, VT_LOGGING_SETUP['VT_LOG_DIRECTORY'])
 if not os.path.exists(log_dir_):
     os.mkdir(log_dir_)
-log_file_ = os.path.join(log_dir_, 'vt-api-server.log')
+
+log_file_ = os.path.join(log_dir_, VT_LOGGING_SETUP['VT_LOG_FILE'])
 
 # More information about the request, such as the IP address, may help debugging some errors.
 class VtAPIRequestFormatter():
@@ -95,7 +97,7 @@ dictConfig({
         },
     'handlers':
         {
-            'vt-api':
+            'vt-log-handler':
                 {
                     'level': 'ERROR',
                     'class': 'logging.handlers.RotatingFileHandler',
@@ -107,9 +109,9 @@ dictConfig({
         },
     'loggers':
         {
-            'vt-api-logger':
+            'vt-logger':
                 {
-                    'handlers': ['vt-api'],
+                    'handlers': ['vt-log-handler'],
                     'level': 'ERROR',
                     'propagate': False
                 }
@@ -117,10 +119,10 @@ dictConfig({
     'root':
         {
             'level': 'DEBUG',
-            'handlers': ['vt-api']
+            'handlers': ['vt-log-handler']
         }
 })
 
 # APIs usr this logger.
-vt_logger_ = logging.getLogger('vt-api-logger')
+vt_logger_ = logging.getLogger('vt-logger')
 
